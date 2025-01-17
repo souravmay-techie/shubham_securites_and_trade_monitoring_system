@@ -1,1 +1,2 @@
-# shubham_securites_and_trade_monitoring_system
+# Shubham Securities
+Objective of this application is to provide safety net to retail investor 
