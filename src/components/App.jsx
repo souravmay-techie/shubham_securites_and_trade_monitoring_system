@@ -1,5 +1,5 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import reactLogo from "./../assets/react.svg";
 import { invoke } from "@tauri-apps/api/core";
 //import { Form } from "@rjsf/antd";
 //import { AntdForm } from "@rjsf/antd";
