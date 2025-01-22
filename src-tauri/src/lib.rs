@@ -1,7 +1,11 @@
 // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
+use tauri::{generate_handler};
+use serde_json::Value;
+
 #[tauri::command]
-fn greet(name: &str) -> String {
-    format!("Hello, {}! You've been greeted from Rust!", name)
+fn greet(das: Value) -> Value {
+    //format!("Hello, {}! You've been greeted from Rust!", name)
+    das
 }
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
