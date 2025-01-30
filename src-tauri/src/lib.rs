@@ -1,10 +1,16 @@
 // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-use tauri::{generate_handler};
 use serde_json::Value;
+use tauri::generate_handler;
 
+fn das() -> i32 {
+    let x = 10;
+    x
+}
 #[tauri::command]
 fn greet(das: Value) -> Value {
     //format!("Hello, {}! You've been greeted from Rust!", name)
+    let x = crate::das();
+    println!("output is {x}");
     das
 }
 
