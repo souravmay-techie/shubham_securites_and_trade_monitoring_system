@@ -1,0 +1,33 @@
+.container {
+    display: -webkit-flex;
+    /* add webkit prefix */
+    display: -moz-flex;
+    /* add moz prefix */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.block-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.condition-block,
+.execution-block,
+.compiled-block {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 1em;
+    width: 30vw;
+    /* use vw unit instead of % */
+    /* use vh unit instead of % */
+    overflow-y: auto;
+    margin: 10px;
+
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
